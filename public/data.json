@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "title": "Dell XPS 13",
+    "image": "https://i.postimg.cc/pLZxmM9r/download-1.jpg",
+    "category": "Laptop",
+    "price": 999.99,
+    "description": "A powerful and compact laptop with a 13.4-inch display.",
+    "specification": [
+      { "key": "Processor", "value": "Intel Core i7" },
+      { "key": "RAM", "value": "16GB" },
+      { "key": "Storage", "value": "512GB SSD" },
+      { "key": "Display", "value": "13.4-inch Full HD" }
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "title": "MacBook Air M2",
+    "image": "https://i.postimg.cc/vmZy929z/download-2.jpg",
+    "category": "Laptop",
+    "price": 1199.00,
+    "description": "The thin and light MacBook with Apple Silicon for unmatched performance.",
+    "specification": [
+      { "key": "Processor", "value": "Apple M2" },
+      { "key": "RAM", "value": "8GB" },
+      { "key": "Storage", "value": "256GB SSD" },
+      { "key": "Display", "value": "13.6-inch Retina" }
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "title": "Lenovo ThinkPad X1 Carbon",
+    "image": "https://i.postimg.cc/3x7Yrxxz/download-3.jpg",
+    "category": "Laptop",
+    "price": 1499.99,
+    "description": "A premium business laptop with top-notch performance and durability.",
+    "specification": [
+      { "key": "Processor", "value": "Intel Core i7" },
+      { "key": "RAM", "value": "16GB" },
+      { "key": "Storage", "value": "1TB SSD" },
+      { "key": "Display", "value": "14-inch WQHD" }
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 4,
+    "title": "HP Spectre x360",
+    "image": "https://i.postimg.cc/NfRQwHB1/download-4.jpg",
+    "category": "Laptop",
+    "price": 1399.99,
+    "description": "A sleek convertible laptop with stunning design and performance.",
+    "specification": [
+      { "key": "Processor", "value": "Intel Core i7" },
+      { "key": "RAM", "value": "16GB" },
+      { "key": "Storage", "value": "512GB SSD" },
+      { "key": "Display", "value": "13.5-inch OLED" }
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "title": "Asus ROG Zephyrus G14",
+    "image": "https://i.postimg.cc/mZvTqwfL/download-5.jpg",
+    "category": "Laptop",
+    "price": 1799.99,
+    "description": "A high-performance gaming laptop with incredible portability.",
+    "specification": [
+      { "key": "Processor", "value": "AMD Ryzen 9" },
+      { "key": "RAM", "value": "16GB" },
+      { "key": "Storage", "value": "1TB SSD" },
+      { "key": "Graphics", "value": "NVIDIA RTX 3060" }
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "title": "Acer Aspire 5",
+    "image": "https://i.postimg.cc/dDPNB3fF/download-6.jpg",
+    "category": "Laptop",
+    "price": 699.99,
+    "description": "An affordable and reliable laptop for everyday tasks.",
+    "specification": [
+      { "key": "Processor", "value": "Intel Core i5" },
+      { "key": "RAM", "value": "8GB" },
+      { "key": "Storage", "value": "256GB SSD" },
+      { "key": "Display", "value": "15.6-inch Full HD" }
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "title": "iPhone 15 Pro",
+    "image": "https://i.postimg.cc/pVh2qSSc/download-4.png",
+    "category": "Phone",
+    "price": 1199.00,
+    "description": "The latest iPhone with cutting-edge performance and an advanced camera system.",
+    "specification": [
+      { "key": "Processor", "value": "A17 Bionic" },
+      { "key": "RAM", "value": "8GB" },
+      { "key": "Storage", "value": "256GB" },
+      { "key": "Camera", "value": "Triple 48MP" }
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "title": "Samsung Galaxy S23 Ultra",
+    "image": "https://i.postimg.cc/G2f54qJH/download-7.jpg",
+    "category": "Phone",
+    "price": 1299.99,
+    "description": "A flagship smartphone with a high-resolution display and advanced camera.",
+    "specification": [
+      { "key": "Processor", "value": "Snapdragon 8 Gen 2" },
+      { "key": "RAM", "value": "12GB" },
+      { "key": "Storage", "value": "512GB" },
+      { "key": "Camera", "value": "200MP Quad" }
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "title": "Logitech MX Master 3",
+    "image": "https://i.postimg.cc/T1WHggCQ/download-8.jpg",
+    "category": "Accessory",
+    "price": 99.99,
+    "description": "Ergonomic wireless mouse with advanced precision and customization options.",
+    "specification": [
+      { "key": "Connectivity", "value": "Bluetooth, USB Receiver" },
+      { "key": "Battery Life", "value": "Up to 70 days" },
+      { "key": "DPI", "value": "4000" }
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": 10,
+    "title": "Sony WH-1000XM5",
+    "image": "https://i.postimg.cc/63qP6DZk/download-9.jpg",
+    "category": "Accessory",
+    "price": 399.99,
+    "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+    "specification": [
+      { "key": "Connectivity", "value": "Bluetooth" },
+      { "key": "Battery Life", "value": "Up to 30 hours" },
+      { "key": "Features", "value": "Noise Cancellation, Touch Controls" }
+    ],
+    "availability": true,
+    "rating": 4.8
+  }
+]
