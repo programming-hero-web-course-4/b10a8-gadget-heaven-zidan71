@@ -1,7 +1,6 @@
 
 
-const getStoredReadList = () => {
-    // read-list
+const getStoredCartList = () => {
     const storedListStr = localStorage.getItem('read-list');
     if (storedListStr) {
         const storedList = JSON.parse(storedListStr);
@@ -12,23 +11,20 @@ const getStoredReadList = () => {
     }
 }
 
-const addToStoredReadList = (id) => {
-    const storedList = getStoredReadList();
+const addToStoredCartList = (id) => {
+    const storedList = getStoredCartList();
     if (storedList.includes(id)) {
-        // already exists. do not add it
         console.log(id, 'already exists in the read list')
     }
     else {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('read-list', storedListStr);
-        // ideally trigger toast from the component
         console.log('This book is added to your read list.')
     }
 }
 
 const getStoredWishList = () => {
-    // read-list
     const storedWishListStr = localStorage.getItem('wish-list');
     if (storedWishListStr) {
         const storedWishList = JSON.parse(storedWishListStr);
@@ -43,7 +39,6 @@ const getStoredWishList = () => {
 const addToStoredWishList = (id) => {
     const storedWishList = getStoredWishList();
     if (storedWishList.includes(id)) {
-        // already exists. do not add it
         console.log(id, 'already exists in the read list')
     }
     else {
@@ -53,4 +48,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredReadList, addToStoredWishList, getStoredReadList,getStoredWishList }
+export { addToStoredCartList, addToStoredWishList, getStoredCartList,getStoredWishList }

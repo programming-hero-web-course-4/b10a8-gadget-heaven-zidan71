@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Specification from '../Specification/Specification';
 import { IoStar } from 'react-icons/io5';
 import { FaCartShopping } from 'react-icons/fa6';
 import { FaHeart } from 'react-icons/fa';
-import { addToStoredReadList, addToStoredWishList } from '../utility/utility';
+import {  addToStoredCartList, addToStoredWishList } from '../utility/utility';
+import { use } from 'react';
+import { toast } from 'react-toastify';
 
 
 const ProductDetails = () => {
@@ -17,15 +19,19 @@ const ProductDetails = () => {
     const product = data.find(product => product.id === idInt);
 
     const {id: productIdd , image,title,price,availability,description,specification,rating} = product;
-    console.log(product)
 
+    const [wishlist,setWishList] = useState(false)
 
     const handleAddToCart = (id) => {
-        addToStoredReadList(id)
+        toast.success("Added To Cart Successfully"
+        )
+        addToStoredCartList(id)
     }
 
     const handWishList = (id) => {
         addToStoredWishList(id)
+        setWishList(true)
+        toast.info('Added to Wishlist Successfully')
     }
 
 
@@ -89,7 +95,7 @@ const ProductDetails = () => {
     
    <div className='flex gap-3 mt-3'>
    <button onClick={() => handleAddToCart(id)} className="btn bg-purple-500">Add to Cart <FaCartShopping></FaCartShopping></button>
-   <button onClick={()=> handWishList(id)} className="btn rounded-full"><FaHeart></FaHeart></button>
+   <button onClick={()=> handWishList(id)} className={`btn rounded-full ${wishlist? 'btn-disabled': ''}`}><FaHeart></FaHeart></button>
    </div>
 
     </div>
