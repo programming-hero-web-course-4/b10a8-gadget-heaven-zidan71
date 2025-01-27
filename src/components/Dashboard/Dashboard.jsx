@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import {  getStoredCartList, getStoredWishList } from '../utility/utility';
+import { getStoredCartList, getStoredWishList } from '../utility/utility';
 import CartWishList from '../CartWishList/CartWishList';
+import { Helmet } from 'react-helmet-async';
 
 const Dashboard = () => {
 
@@ -51,8 +52,13 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className="hero bg-purple-700 rounded-2xl">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+
+            <Helmet>
+                <title>Dashboard</title>
+            </Helmet>
+
+            <div className="hero bg-purple-700 rounded-2xl ">
+                <div className="hero-content flex-col lg:flex-row-reverse ">
                     <div>
                         <h1 className="text-5xl pt-10 font-bold text-white text-center">
                             Dashboard
@@ -83,13 +89,13 @@ const Dashboard = () => {
 
             <div className="p-5">
                 <h1 className="text-2xl font-bold">
-                    {selectedView === 'cart' ? <div className='flex justify-between items-center'>
+                    {selectedView === 'cart' ? <div className='lg:flex justify-between items-center'>
 
-                        <h1>Cart</h1>
+                        <h1 className='text-center'>Cart</h1>
 
-                        <div className='flex gap-28 items-center'>
-                            <h1>Total cost: {totalCost.toFixed(2)}$</h1>
-                            <div className='flex gap-3'>
+                        <div className='lg:flex gap-28 items-center'>
+                            <h1 className='text-center mt-3'>Total cost: {totalCost.toFixed(2)}$</h1>
+                            <div className='flex justify-center lg:justify-between gap-3 mt-3'>
                                 <button onClick={sortByPrice} className="btn btn-outline">Sort by price</button>
 
                                 <button className="btn btn-accent">Purchase</button>

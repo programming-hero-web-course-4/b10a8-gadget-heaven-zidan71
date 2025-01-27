@@ -12,6 +12,8 @@ import Statistics from './components/Statistics/Statistics';
 import Dashboard from './components/Dashboard/Dashboard';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import { ToastContainer, toast } from 'react-toastify';
+import {  HelmetProvider } from 'react-helmet-async';
+import Reviews from './components/Reviews/Reviews';
 
 
 
@@ -40,7 +42,12 @@ const router = createBrowserRouter([
         path:'/products/:id',
         element:<ProductDetails></ProductDetails>,
         loader: () => fetch('/data.json')
+      },
+      {
+        path:'/reviews',
+        element:<Reviews></Reviews>,
       }
+
       
     ]
   },
@@ -51,8 +58,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <RouterProvider router={router} />
-  <ToastContainer/>
 
+  <HelmetProvider>
+  <RouterProvider router={router} />
+  </HelmetProvider>
+
+  <ToastContainer/>
     </StrictMode>,
 )

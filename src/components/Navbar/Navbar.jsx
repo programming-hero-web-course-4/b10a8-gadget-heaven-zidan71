@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaHeart } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
-import { NavLink } from 'react-router-dom';
-import img from "../../assets/banner.jpg"
+import { NavLink, useLocation,  } from 'react-router-dom';
 
 const links =<>
 <li>
@@ -14,14 +13,25 @@ const links =<>
 <li>
     <NavLink to='/dashboard'>Dashboard</NavLink>
 </li>
+<li>
+  <NavLink to='/reviews'>Reviews</NavLink>
+</li>
 </>
 
 const Navbar = () => {
+
+  const url = useLocation().pathname
+
+
+
+
+
+
     return (
       <>
-      <div className="  rounded-2xl relative">
-       <div className='w-[95%] mx-auto'>
-       <div className="navbar ">
+      <div className="">
+       <div className={`w-[100%] mx-auto `}>
+       <div className=" navbar ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +65,10 @@ const Navbar = () => {
     <a className="btn rounded-full"><FaCartShopping></FaCartShopping></a>
     <a className="btn rounded-full"><FaHeart></FaHeart></a>
   </div>
+
+  
 </div>
+
 
        </div> 
   

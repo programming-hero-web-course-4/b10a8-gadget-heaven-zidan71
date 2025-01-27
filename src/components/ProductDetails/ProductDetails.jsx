@@ -7,6 +7,7 @@ import { FaHeart } from 'react-icons/fa';
 import {  addToStoredCartList, addToStoredWishList } from '../utility/utility';
 import { use } from 'react';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 
 const ProductDetails = () => {
@@ -37,6 +38,11 @@ const ProductDetails = () => {
 
     return (
         <div className=''>
+
+          <Helmet>
+            <title>{title}</title>
+          </Helmet>
+
        <div className='hero bg-purple-700 rounded-2xl'>
   <div className=" hero-content flex-col lg:flex-row-reverse">
    

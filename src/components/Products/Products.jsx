@@ -18,15 +18,15 @@ const Products = () => {
         <div className=''>
             <h1 className='text-center font-bold text-3xl text-white'>Explore more cutting Edge Products</h1><br />
 
-            <div className='flex gap-20'>
-                <div>
+            <div className='flex flex-col lg:flex-row justify-center gap-20 p-5'>
+                <div className='flex flex-col'>
                     <button className="btn" onClick={() => setFilter('Laptop')}>Laptop</button><br /><br />
                     <button className="btn" onClick={() => setFilter('Phone')}>Phone</button><br /><br />
                     <button className="btn" onClick={() => setFilter('Accessory')}>Accessory</button><br /><br />
                     <button className="btn" onClick={() => setFilter('All')}>All Products</button>
                 </div>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 gap-10  md:grid-cols-2'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  '>
                     {
                         filteredProducts.length === 0 ? (
                             <p className='text-center'>No products found for this Category</p>

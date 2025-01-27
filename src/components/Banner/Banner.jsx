@@ -3,7 +3,8 @@ import img from '../../assets/banner.jpg'
 
 const Banner = () => {
     return (
-     <div className='bg-purple-700 rounded-2xl'>
+     <>
+     <div className=' rounded-2xl'>
        <div className='hero'>
   <div className=" hero-content flex-col lg:flex-row-reverse">
    
@@ -30,6 +31,7 @@ const Banner = () => {
   
       
      </div>
+     </>
     );
 };
 
